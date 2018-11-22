@@ -65,6 +65,7 @@
 		73FB146721A5E20B004E2CD1 /* Process+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB146321A5E20A004E2CD1 /* Process+Promise.swift */; };
 		73FB146821A5E20B004E2CD1 /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB146421A5E20A004E2CD1 /* NSURLSession+Promise.swift */; };
 		73FB146921A5E20B004E2CD1 /* NSNotificationCenter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB146521A5E20B004E2CD1 /* NSNotificationCenter+Promise.swift */; };
+		73FB150521A6D790004E2CD1 /* CoreData+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FB150421A6D790004E2CD1 /* CoreData+Promise.swift */; };
 		C013F7382048E3B6006B57B1 /* MockNodeEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013F7372048E3B6006B57B1 /* MockNodeEnvironment.swift */; };
 		C013F73A2049076A006B57B1 /* JSPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013F7392049076A006B57B1 /* JSPromise.swift */; };
 		C013F73C20494291006B57B1 /* JSAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013F73B20494291006B57B1 /* JSAdapter.swift */; };
@@ -191,6 +192,7 @@
 		73FB146321A5E20A004E2CD1 /* Process+Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Process+Promise.swift"; sourceTree = "<group>"; };
 		73FB146421A5E20A004E2CD1 /* NSURLSession+Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURLSession+Promise.swift"; sourceTree = "<group>"; };
 		73FB146521A5E20B004E2CD1 /* NSNotificationCenter+Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNotificationCenter+Promise.swift"; sourceTree = "<group>"; };
+		73FB150421A6D790004E2CD1 /* CoreData+Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreData+Promise.swift"; sourceTree = "<group>"; };
 		C013F7372048E3B6006B57B1 /* MockNodeEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockNodeEnvironment.swift; path = "Tests/JS-A+/MockNodeEnvironment.swift"; sourceTree = "<group>"; };
 		C013F7392049076A006B57B1 /* JSPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JSPromise.swift; path = "Tests/JS-A+/JSPromise.swift"; sourceTree = "<group>"; };
 		C013F73B20494291006B57B1 /* JSAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JSAdapter.swift; path = "Tests/JS-A+/JSAdapter.swift"; sourceTree = "<group>"; };
@@ -396,6 +398,7 @@
 				73FB146221A5E20A004E2CD1 /* NSObject+Promise.swift */,
 				73FB146421A5E20A004E2CD1 /* NSURLSession+Promise.swift */,
 				73FB146321A5E20A004E2CD1 /* Process+Promise.swift */,
+				73FB150421A6D790004E2CD1 /* CoreData+Promise.swift */,
 			);
 			name = Foundation;
 			path = Sources/Foundation;
@@ -651,6 +654,7 @@
 			files = (
 				636A29251F1C3089001229C2 /* race.swift in Sources */,
 				73FB146821A5E20B004E2CD1 /* NSURLSession+Promise.swift in Sources */,
+				73FB150521A6D790004E2CD1 /* CoreData+Promise.swift in Sources */,
 				63B0AC9A1D595E6300FA21D9 /* when.swift in Sources */,
 				636A29271F1C3927001229C2 /* Resolver.swift in Sources */,
 				73FB146621A5E20B004E2CD1 /* NSObject+Promise.swift in Sources */,
