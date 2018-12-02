@@ -7,7 +7,7 @@
 
 import Foundation
 import CoreData
-
+import os.log
 
 @available(iOS 10.0, macOS 10.12, *)
 extension NSPersistentContainer {
@@ -23,6 +23,7 @@ extension NSPersistentContainer {
 				seal.reject(err)
 			}
 			if expectedCount <= 0 {
+				os_log("persistent store loaded: %{public}@", store.url?.absoluteString ?? ""	)
 				seal.fulfill(())
 			}
 		}
