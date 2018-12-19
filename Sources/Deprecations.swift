@@ -46,7 +46,7 @@ public extension Thenable {
 #if PMKFullDeprecations
     /// disabled due to ambiguity with the other `.flatMap`
     @available(*, deprecated: 6.1, message: "See: `compactMap`")
-    func flatMap<U>(on: DispatchQueue? = conf.Q.map, _ transform: @escaping(T) throws -> U?) -> Promise<U> {
+    func flatMap<U>(on: DispatchQueue? = conf.Q.map, _ transform: @escaping(Element) throws -> U?) -> Promise<U> {
         return compactMap(on: on, transform)
     }
 #endif
@@ -56,13 +56,13 @@ public extension Thenable where T: Sequence {
 #if PMKFullDeprecations
     /// disabled due to ambiguity with the other `.map`
     @available(*, deprecated, message: "See: `mapValues`")
-    func map<U>(on: DispatchQueue? = conf.Q.map, _ transform: @escaping(T.Iterator.Element) throws -> U) -> Promise<[U]> {
+    func map<U>(on: DispatchQueue? = conf.Q.map, _ transform: @escaping(Element.Iterator.Element) throws -> U) -> Promise<[U]> {
         return mapValues(on: on, transform)
     }
 
     /// disabled due to ambiguity with the other `.flatMap`
     @available(*, deprecated, message: "See: `flatMapValues`")
-    func flatMap<U: Sequence>(on: DispatchQueue? = conf.Q.map, _ transform: @escaping(T.Iterator.Element) throws -> U) -> Promise<[U.Iterator.Element]> {
+    func flatMap<U: Sequence>(on: DispatchQueue? = conf.Q.map, _ transform: @escaping(Element.Iterator.Element) throws -> U) -> Promise<[U.Iterator.Element]> {
         return flatMapValues(on: on, transform)
     }
 #endif
